@@ -1,4 +1,8 @@
 const sumAll = function(a, b) {
+  if (b < a) {
+    [a, b] = [b, a];
+  }
+
   let sum = 0;
 
   for (let i = a; i <= b; i++) {
